@@ -86,17 +86,22 @@ body {
   background-color: black; }
 
 .sect-title {
-  width: 300px;
+  width: 50%;
   text-align: center;
   font-family: arial black;
   text-transform: uppercase;
-  font-size: 70px;
-  margin: 0 auto;
+  font-size: 3rem;
+  margin: 20% auto;
   border: 1px solid pink;
   color: pink; }
+  @media (min-width: 1000px) {
+    .sect-title {
+      width: 300px;
+      font-size: 70px;
+      margin: 0 auto; } }
 
 .description {
-  width: 500px;
+  width: 90%;
   text-align: center;
   font-family: arial black;
   text-transform: uppercase;
@@ -104,6 +109,9 @@ body {
   margin: 20px auto;
   border: 1px solid lightgrey;
   color: lightgrey; }
+  @media (min-width: 1000px) {
+    .description {
+      width: 500px; } }
 
 .home-sect {
   display: block; }
@@ -111,17 +119,24 @@ body {
 .contact-sect {
   height: 0px;
   overflow: hidden;
-  margin-top: -100px; }
+  margin-top: 90px; }
+  @media (min-width: 1000px) {
+    .contact-sect {
+      margin-top: 0px; } }
 
 .sect-title-contact {
-  width: 400px;
   text-align: center;
   font-family: arial black;
   text-transform: uppercase;
-  font-size: 70px;
   margin: 0 auto;
   border: 1px solid pink;
-  color: pink; }
+  color: pink;
+  width: 90%;
+  font-size: 4rem; }
+  @media (min-width: 1000px) {
+    .sect-title-contact {
+      width: 400px;
+      font-size: 70px; } }
 
 .description-contact {
   width: 200px;
