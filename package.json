@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quinlan-alys/nstanewsi.git"
+    "url": "git+https://github.com/quinlan-alys/quinlan-site.git"
   },
   "bugs": {
-    "url": "https://github.com/quinlan-alys/nstanewsi/issues"
+    "url": "https://github.com/quinlan-alys/quinlan-site/issues"
   },
-  "homepage": "https://github.com/quinlan-alys/nstanewsi#readme"
+  "homepage": "https://github.com/quinlan-alys/quinlan-site#readme"
 }

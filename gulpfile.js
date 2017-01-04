@@ -1,87 +1,111 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var browsersync = require('browser-sync');
-var plumber = require('gulp-plumber');
-var coffee = require('gulp-coffee');
-var sass = require('gulp-sass');
-var reload = browsersync.reload;
-//var eslint = require('gulp-eslint');
-var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
-var notify = require('gulp-notify');
-var babel = require('gulp-babel');
-//sass task
+const gulp = require('gulp'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    browserSync = require('browser-sync').create(),
+    plumber = require('gulp-plumber'),
+    eslint = require('gulp-eslint'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cssnano = require('gulp-cssnano'),
+    notify = require('gulp-notify'),
+    babel = require('gulp-babel');
 
-var plumberErrorHandler={
-    errorHandler: notify.onError({
-        title: "gulp",
-        message: "Error: <%= error.message=%>" //will be notified if something is wrong. 
-    })
-}
-//SASS
-gulp.task('sass', function() {
-   gulp.src('./sass/style.scss')
-      .pipe(sass())
-      .pipe(plumber(plumberErrorHandler))
-      .pipe(autoprefixer({
-         browsers: ['last 2 versions']
-      }))
-      .pipe(gulp.dest('./build/css'))
-      .pipe(cssnano())
-      .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('./build/css'));
+
+/*** say hello test task ***/
+/*gulp.task('say_hello', () => {
+    console.log('Hello!');
+});*/
+
+/*** sass build .css tasks ***/
+gulp.task('sass', () => {
+    gulp.src('./sass/style.scss')
+        .pipe(plumber(plumberErrorHandler))
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions']
+        }))
+        .pipe(gulp.dest('./build/css'))
+        .pipe(cssnano())
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./build/css'));
+
+    console.log('[SASS] TASK COMPLETE');
 });
 
-// gulp.task('default', ['eslint'], function () {
-//     console.log('heeey')
-// });
- 
-
-// gulp.task('plumba', function (){
-// gulp.src('./src/*.ext')
-//     .pipe(plumber())
-//     .pipe(gulp.dest('./dist'))
-
-// });
- 
- gulp.task('serve', function(){ //runs a take that we named default
-   gulp.src('./js/*.js') //what files do we want to be absorbed by gulp
-      .pipe(babel())
-      //.pipe(eslint())
-      //.pipe(eslint.format())
-    // Brick on failure to be super strict
-      .pipe(eslint.failOnError())
-      .pipe(uglify()) // enable uglify, minifies... pipe chains things together
-      .pipe(rename({ extname: '.min.js' })) //  give new name to uglify file to .js
-      .pipe(gulp.dest('./build/js')) // location to put results? build file.
- });
-// Save a reference to the `reload` method
-
-// Watch scss AND html files, doing different things with each.
-gulp.task('browsersync', function () {
-    // Serve files from the root of this project
-    browsersync.init({
+/*** browserSync task ***/
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
         server: {
             baseDir: "./"
         }
     });
-
-    gulp.watch(["build/css/*.css", "build/js/*.js"]).on("change", reload);
 });
 
+// or...
+/*gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "yourlocal.dev"
+    });
+});*/
+
+/*** js build tasks ***/
+//gulp.task('js',['lint'], function(){
+gulp.task('js', () => {
+    gulp.src('./js/*.js')
+        .pipe(uglify())
+        .pipe(rename({ extname: '.min.js' }))
+        .pipe(gulp.dest('./build/js'));
+
+    console.log('[JS] TASK COMPLETE');
+});
+
+/*** gulp-eslint ***/
+gulp.task('lint', () => {
+    // ESLint ignores files with "node_modules" paths.
+    // So, it's best to have gulp ignore the directory as well.
+    // Also, Be sure to return the stream from the task;
+    // Otherwise, the task may end before the stream has finished.
+    return gulp.src(['js/*.js','!node_modules/**'])
+    // eslint() attaches the lint output to the "eslint" property
+    // of the file object so it can be used by other modules.
+        .pipe(eslint())
+        // eslint.format() outputs the lint results to the console.
+        // Alternatively use eslint.formatEach() (see Docs).
+        .pipe(eslint.format())
+        // To have the process exit with an error code (1) on
+        // lint error, return the stream and pipe to failAfterError last.
+        .pipe(eslint.failAfterError());
+});
+
+/*** gulp notify ***/
+var plumberErrorHandler = {
+    errorHandler: notify.onError({
+        title: 'Gulp',
+        message: 'Error: <%= error.message %>'
+
+    })
+};
+
+/*** gulp babel ***/
+const jsInput = 'js/index.js'; //add const for other js inputs
+const jsOutput = './build/js'; //add const for other js outputs
+
+gulp.task('babel', () => {
+    return gulp.src(jsInput)
+        .pipe(babel())
+        .pipe(gulp.dest(jsOutput));
+});
+
+/*** watch task for tasks to watch ***/
 gulp.task('watch', function() {
-   gulp.watch('js/*.js', ['scripts', 'sass',]);
-   gulp.watch('sass/*.scss', ['sass'])
+    //gulp.watch( 'js/*.js', ['js','lint'] );
+    gulp.watch( 'js/*.js', ['js'] );
+    gulp.watch( 'sass/*.scss', ['sass'] );
 });
 
-gulp.task('watch', function() {
-   gulp.watch('js/*.js', ['serve' ]); //eslint
-   gulp.watch('sass/*.scss', ['sass'])
-});
-
-gulp.task('default', [ 'browsersync', 'serve', 'watch', 'sass']);
+/*** initialisation of tasks ***/
+gulp.task('default', ['watch','babel','lint', 'browser-sync']); //'browser-sync',
 
 
-
-
+//work on source folder for sass and js
