@@ -45,186 +45,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*fonts*/
-@font-face {
-  font-family: 'Novocento';
-  src: url("../../fonts/Novecentosanswide-Normal.ttf");
-  src: url("../../fonts/Novecentosanswide-Normal.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-/*base styles*/
-.content {
+header {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 2rem;
-  width: 100%; }
-
-.nytArticles {
-  width: 100%; }
-
-.abstract {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  max-width: 600px;
-  font-family: "open_sanslight";
-  position: absolute;
-  padding: 3rem;
-  font-size: 16px;
-  line-height: 1rem;
-  text-align: left;
-  bottom: 0; }
-
-a {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end; }
-
-.images {
-  height: 400px;
-  width: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end; }
-
-.error {
-  font-family: "open_sanslight";
-  color: white;
-  display: none; }
-
-li {
-  max-width: 100%;
-  -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
-  position: relative; }
-  @media (min-width: 600px) {
-    li {
-      max-width: 50%;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%; } }
-  @media (min-width: 1000px) {
-    li {
-      max-width: 25%;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%; } }
-
-/*header styles*/
-.nytlogo {
-  margin-top: 7rem;
-  margin-bottom: 2rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  margin: 0 auto;
-  padding: 2rem;
   display: flex;
   width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-/*body styles*/
+.logo {
+  height: 100px;
+  width: 100px; }
+
+.menu {
+  margin: 2%;
+  font-family: 'helvetica';
+  color: lightgrey;
+  font-weight: 100; }
+
+.name {
+  margin: 5%; }
+  .name p {
+    font-family: 'helvetica';
+    color: #E8CAEA;
+    font-weight: 100; }
+
 body {
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  font-size: 12px; }
-
-/*footer styles*/
-footer {
-  font-family: "open_sanslight";
-  margin-top: 2rem;
-  margin: 0 auto;
-  color: #c2c2c2; }
-  @media (min-width: 600px) {
-    footer {
-      width: 100%;
-      margin: 0 auto; } }
-  @media (min-width: 1000px) {
-    footer {
-      text-align: left;
-      margin-left: 10%; } }
-
-.insta {
-  text-transform: uppercase; }
-
-.content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 2rem;
-  width: 100%;
-  overflow: hidden; }
-
-a:hover .abstract {
-  bottom: 0; }
-
-.nytArticles {
-  width: 100%; }
-
-.abstract {
-  transition: 0.30s; }
-
-.abstract {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  max-width: 600px;
-  font-family: "open_sanslight";
-  position: absolute;
-  padding: 1rem;
-  font-size: 16px;
-  line-height: 1.5rem;
-  text-align: left;
-  bottom: -200px; }
-
-a {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end; }
-
-.images {
-  height: 400px;
-  width: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end; }
-
-.error {
-  font-family: "open_sanslight";
-  color: white;
-  display: none; }
-
-li {
-  max-width: 100%;
-  -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
-  position: relative; }
-  @media (min-width: 600px) {
-    li {
-      max-width: 50%;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%; } }
-  @media (min-width: 600px) and (min-width: 1000px) {
-    li {
-      max-width: 25%;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%; } }
+  background-color: black; }

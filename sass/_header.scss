@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    width:100px;
+}
+
+.menu {
+    margin: 2%;
+    font-family:'helvetica';
+    color: $light-grey;
+    font-weight: 100;
+}
+
+.name {
+    margin: 5%;
+
+    p {
+    font-family:'helvetica'; 
+     color:$pink-font-color;
+     font-weight: 100;
+    }
+}
