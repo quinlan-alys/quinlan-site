@@ -53,21 +53,131 @@ header {
       justify-content: space-between; }
 
 .logo {
-  height: 100px;
-  width: 100px; }
+  height: 66px;
+  width: 90px; }
 
 .menu {
-  margin: 2%;
-  font-family: 'helvetica';
-  color: lightgrey;
-  font-weight: 100; }
+  margin: 3%; }
+  @media (min-width: 1000px) {
+    .menu {
+      margin: 5%; } }
+  .menu li {
+    font-family: 'helvetica';
+    height: 0px;
+    text-align: center;
+    overflow: hidden;
+    color: lightgrey;
+    font-weight: 100; }
+    .menu li:hover {
+      color: #878787; }
 
 .name {
-  margin: 5%; }
+  margin: 5%;
+  margin-top: 10%; }
+  @media (min-width: 1000px) {
+    .name {
+      margin-top: 7%; } }
   .name p {
     font-family: 'helvetica';
-    color: #E8CAEA;
+    color: lightgrey;
     font-weight: 100; }
 
 body {
   background-color: black; }
+
+.sect-title {
+  width: 300px;
+  text-align: center;
+  font-family: arial black;
+  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0 auto;
+  border: 1px solid pink;
+  color: pink; }
+
+.description {
+  width: 500px;
+  text-align: center;
+  font-family: arial black;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 20px auto;
+  border: 1px solid lightgrey;
+  color: lightgrey; }
+
+.home-sect {
+  display: none; }
+
+.sect-title-contact {
+  width: 400px;
+  text-align: center;
+  font-family: arial black;
+  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0 auto;
+  border: 1px solid pink;
+  color: pink; }
+
+.description-contact {
+  width: 200px;
+  text-align: center;
+  font-family: arial black;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 20px auto;
+  border: 1px solid lightgrey;
+  color: lightgrey; }
+
+.social-media {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 4% auto;
+    width: 260px;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; }
+    .social-media ul li {
+      font-weight: 100; }
+      .social-media ul li:nth-child(1) {
+        margin-left: 10px; }
+        @media (min-width: 1000px) {
+          .social-media ul li:nth-child(1) {
+            margin-left: 11px; } }
+      .social-media ul li i {
+        font-size: 70px;
+        color: white; }
+        .social-media ul li i:hover {
+          color: white; }
+      .social-media ul li a {
+        text-decoration: none; }
+      .social-media ul li span {
+        color: white;
+        font-family: "helvetica";
+        font-weight: 100;
+        text-decoration: none;
+        margin-left: 10px; }
+
+span {
+  overflow: hidden;
+  list-style: none;
+  white-space: nowrap;
+  margin-right: 10px;
+  border-radius: 25px;
+  display: inline-block; }
+
+span {
+  opacity: 0;
+  color: #666;
+  max-width: 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color; }
+
+li:hover span {
+  opacity: 1;
+  max-width: 150px;
+  transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s; }

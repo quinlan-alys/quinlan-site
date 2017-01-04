@@ -5,23 +5,44 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width:100px;
+    height: 66px;
+    width:90px;
 }
 
 .menu {
-    margin: 2%;
+    margin: 3%;
+
+    @include desktop {
+        margin: 5%;
+    }
+   
+   
+    li {
     font-family:'helvetica';
+    height: 0px;
+    text-align:center;
+    overflow:hidden;
     color: $light-grey;
     font-weight: 100;
+
+       &:hover {
+                color: darken(lightgrey, 30%);
+        }
+        
+    }
 }
 
 .name {
     margin: 5%;
+    margin-top:10%;
+
+    @include desktop {
+        margin-top: 7%;
+    }
 
     p {
     font-family:'helvetica'; 
-     color:$pink-font-color;
+     color:$light-grey;
      font-weight: 100;
     }
 }
