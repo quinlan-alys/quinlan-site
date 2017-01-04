@@ -106,7 +106,12 @@ body {
   color: lightgrey; }
 
 .home-sect {
-  display: none; }
+  display: block; }
+
+.contact-sect {
+  height: 0px;
+  overflow: hidden;
+  margin-top: -100px; }
 
 .sect-title-contact {
   width: 400px;
