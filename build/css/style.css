@@ -116,15 +116,15 @@ body {
 .home-sect {
   display: block; }
 
-.contact-sect {
+.contact-sect, .about-sect {
   height: 0px;
   overflow: hidden;
   margin-top: 90px; }
   @media (min-width: 1000px) {
-    .contact-sect {
+    .contact-sect, .about-sect {
       margin-top: 0px; } }
 
-.sect-title-contact {
+.sect-title-contact, .sect-title-about {
   text-align: center;
   font-family: arial black;
   text-transform: uppercase;
@@ -134,11 +134,11 @@ body {
   width: 90%;
   font-size: 4rem; }
   @media (min-width: 1000px) {
-    .sect-title-contact {
+    .sect-title-contact, .sect-title-about {
       width: 400px;
       font-size: 70px; } }
 
-.description-contact {
+.description-contact, .description-about {
   width: 200px;
   text-align: center;
   font-family: arial black;
@@ -147,6 +147,9 @@ body {
   margin: 20px auto;
   border: 1px solid lightgrey;
   color: lightgrey; }
+
+.description-about {
+  width: 300px; }
 
 .social-media {
   display: -ms-flexbox;
@@ -201,3 +204,30 @@ li:hover span {
   opacity: 1;
   max-width: 150px;
   transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s; }
+
+.about-text {
+  margin: 70px auto;
+  font-family: helvetica;
+  color: pink;
+  width: 90%;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 15px; }
+  @media (min-width: 1000px) {
+    .about-text {
+      width: 600px; } }
+
+.about-image {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 1000px) {
+    .about-image {
+      height: 400px; } }

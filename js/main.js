@@ -5,13 +5,22 @@ $('.logo').click(function() {
     $('.home-sect').css('display','none');
     $('.menu ul li').animate({height: '20px'}, 1000)
     $('.contact-sect').css('display', 'none');
+    $('.about-sect').css('display', 'none');
 }) 
 
-
+//display contact section and retract
 $('.contact-li').click(function() {
     console.log('hope');
      $('.contact-sect').css('display', 'block');
     $('.contact-sect').animate({height: '1000px'}, 1000)
+    $('.menu ul li').animate({height: '0px'}, 1000)
+}) 
+
+//display about me section and retract
+$('.about-li').click(function() {
+    console.log('hope');
+     $('.about-sect').css('display', 'block');
+    $('.about-sect').animate({height: '1000px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 

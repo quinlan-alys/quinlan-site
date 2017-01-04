@@ -40,7 +40,7 @@ body {
 .home-sect {
     display:block;
 }
-.contact-sect {
+.contact-sect, .about-sect {
     height:0px;
     overflow:hidden;
     margin-top: 90px;
@@ -50,9 +50,9 @@ body {
     }
 }
 
-//contact page styles -------------------------
+//title and description styles -------------------------
 
-.sect-title-contact {
+.sect-title-contact, .sect-title-about {
     text-align: center;
     font-family: arial black;
     text-transform: uppercase;
@@ -68,7 +68,7 @@ body {
     }
 }
 
-.description-contact {
+.description-contact, .description-about{
     width: 200px;
     text-align: center;
     font-family: arial black;
@@ -80,9 +80,12 @@ body {
 
 }
 
+.description-about {
+    width:300px;
+}
+
 .social-media {
     display:flex;
-    
     margin: 0 auto;
   
 
@@ -159,3 +162,34 @@ span {
         }
 
 
+// about styles -==================
+
+.about-text {
+
+    margin: 70px auto;
+    font-family: helvetica;
+    color: pink;
+    width:90%;
+    font-weight: 100;
+    line-height: 25px;
+    font-size:15px;
+
+    @include desktop {
+        width: 600px;
+
+    }
+}
+
+.about-image {
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+        height:400px;
+    }
+}
