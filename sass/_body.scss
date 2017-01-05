@@ -38,9 +38,9 @@ body {
 }
 
 .home-sect {
-    display:none;
+    display:block;
 }
-.contact-sect, .about-sect, .dev-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect {
     height:0px;
     overflow:hidden;
     // margin-top: 90px;

@@ -7,6 +7,7 @@ $('.logo').click(function() {
     $('.contact-sect').css('display', 'none');
     $('.about-sect').css('display', 'none');
     $('.dev-sect').css('display', 'none');
+    $('.art-sect').css('display', 'none');
 }) 
 
 //display contact section and retract
@@ -34,6 +35,14 @@ $('.dev-li').click(function() {
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 
+//display art section and retract
+$('.art-li').click(function() {
+    console.log('hope');
+     $('.art-sect').css('display', 'block');
+    $('.art-sect').animate({height: '4500px'}, 1000)
+    $('.art-sect').css('margin-top', '90px');
+    $('.menu ul li').animate({height: '0px'}, 1000)
+}) 
 
 
 });

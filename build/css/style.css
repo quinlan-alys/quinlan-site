@@ -114,13 +114,13 @@ body {
       width: 500px; } }
 
 .home-sect {
-  display: none; }
+  display: block; }
 
-.contact-sect, .about-sect, .dev-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect {
   height: 0px;
   overflow: hidden; }
   @media (min-width: 1000px) {
-    .contact-sect, .about-sect, .dev-sect {
+    .contact-sect, .about-sect, .dev-sect, .art-sect {
       margin-top: 0px; } }
 
 .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art {
