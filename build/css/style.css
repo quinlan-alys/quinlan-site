@@ -427,7 +427,42 @@ li:hover span {
       justify-content: flex-end;
   -ms-flex-direction: column;
       flex-direction: column;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .art-work1:hover p:nth-child(2),
+  .art-work2:hover p:nth-child(2),
+  .art-work3:hover p:nth-child(2),
+  .art-work4:hover p:nth-child(2),
+  .art-work5:hover p:nth-child(2),
+  .art-work6:hover p:nth-child(2),
+  .art-work7:hover p:nth-child(2),
+  .art-work8:hover p:nth-child(2),
+  .art-work9:hover p:nth-child(2),
+  .art-work10:hover p:nth-child(2),
+  .art-work11:hover p:nth-child(2),
+  .art-work12:hover p:nth-child(2),
+  .art-work13:hover p:nth-child(2),
+  .art-work14:hover p:nth-child(2),
+  .art-work15:hover p:nth-child(2),
+  .art-work16:hover p:nth-child(2) {
+    bottom: 0; }
+  .art-work1:hover p:nth-child(1),
+  .art-work2:hover p:nth-child(1),
+  .art-work3:hover p:nth-child(1),
+  .art-work4:hover p:nth-child(1),
+  .art-work5:hover p:nth-child(1),
+  .art-work6:hover p:nth-child(1),
+  .art-work7:hover p:nth-child(1),
+  .art-work8:hover p:nth-child(1),
+  .art-work9:hover p:nth-child(1),
+  .art-work10:hover p:nth-child(1),
+  .art-work11:hover p:nth-child(1),
+  .art-work12:hover p:nth-child(1),
+  .art-work13:hover p:nth-child(1),
+  .art-work14:hover p:nth-child(1),
+  .art-work15:hover p:nth-child(1),
+  .art-work16:hover p:nth-child(1) {
+    bottom: 45px; }
   @media (min-width: 1000px) {
     .art-work1,
     .art-work2,
@@ -466,9 +501,11 @@ li:hover span {
     padding: 5%;
     font-family: helvetica;
     font-weight: 100;
-    color: black;
+    color: white;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
+    transition: 0.30s;
+    width: 100%;
     bottom: -100px;
     overflow: hidden; }
     .art-work1 p:nth-child(2),

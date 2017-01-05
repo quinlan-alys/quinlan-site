@@ -98,6 +98,14 @@
     justify-content: flex-end;
     flex-direction: column;
     position:relative;
+    overflow:hidden;
+
+    &:hover p:nth-child(2) {
+        bottom: 0;
+    }
+     &:hover p:nth-child(1) {
+        bottom: 45px;
+    }
 
     @include desktop {
         flex-basis: 25%;
@@ -107,17 +115,17 @@ p {
     padding: 5%;
     font-family:helvetica;
     font-weight:100;
-    color:black;
+    color:white;
     background: rgba(0 ,0, 0,0.5);
      position:absolute;
-    // bottom: 45px;
+     transition: 0.30s; 
+     width: 100%;
     bottom: -100px;
     overflow:hidden;
 
 
    &:nth-child(2){
     position:absolute;
-    // bottom: 45px;
     bottom: -100px;
    }
 }

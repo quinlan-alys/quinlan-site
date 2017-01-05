@@ -34,4 +34,6 @@ $('.dev-li').click(function() {
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 
+
+
 });
