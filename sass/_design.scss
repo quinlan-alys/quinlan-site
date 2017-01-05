@@ -36,8 +36,10 @@
 }
 
 .des-examples {
-    display:flex;
+    display:none;
     width:80%;
     justify-content:space-between;
     margin:10% auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }

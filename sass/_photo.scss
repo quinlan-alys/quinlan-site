@@ -18,18 +18,19 @@
     margin:5% auto;
     background-color:green;
     display:flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
     flex-direction:column;
 
     p {
         font-family:helvetica;
         font-weight:100;
         color:white;
+        padding: 5%;
     }
 
 }
 
 .photo-examples {
-    display:flex;
+    display:none;
     flex-wrap:wrap;
 }

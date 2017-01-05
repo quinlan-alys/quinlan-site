@@ -9,14 +9,29 @@ $('.logo').click(function() {
     $('.dev-sect').css('display', 'none');
     $('.des-sect').css('display', 'none');
     $('.art-sect').css('display', 'none');
+    $('.photo-sect').css('display', 'none');
 }) 
 
+$('.description').click(function() {
+    // $('.home-sect').animate({display:'none'}, 1000);
+    $('.home-sect').css('display','none');
+    $('.menu ul li').animate({height: '20px'}, 1000)
+ 
+}) 
 //display contact section and retract
 $('.contact-li').click(function() {
    
      $('.contact-sect').css('display', 'block');
-    $('.contact-sect').animate({height: '1000px'}, 1000)
+    $('.contact-sect').animate({height: '500px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
+}) 
+
+$('.description-contact').click(function() {
+    $('.about-sect').css('display', 'none');
+      $('.contact-sect').css('display', 'block');
+    $('.contact-sect').animate({height: '500px'}, 1000)
+
+   
 }) 
 
 //display about me section and retract
@@ -41,7 +56,7 @@ $('.art-li').click(function() {
 
      $('.art-sect').css('display', 'block');
     $('.art-sect').animate({height: '4500px'}, 1000)
-    $('.art-sect').css('margin-top', '90px');
+    // $('.art-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 
@@ -49,18 +64,58 @@ $('.art-li').click(function() {
 $('.design-li').click(function() {
 
      $('.des-sect').css('display', 'block');
-    $('.des-sect').animate({height: '4500px'}, 1000)
-    $('.des-sect').css('margin-top', '90px');
+    $('.des-sect').animate({height: '1200px'}, 1000)
+    // $('.des-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 
-//display social media buttons onclick
+//display photography section and retract
+$('.photo-li').click(function() {
+
+     $('.photo-sect').css('display', 'block');
+    $('.photo-sect').animate({height: '4500px'}, 1000)
+    // $('.photo-sect').css('margin-top', '90px');
+    $('.menu ul li').animate({height: '0px'}, 1000)
+}) 
+
+//display content of catagories on description click
 
 $('.description-contact').click(function() {
 
      $('.social-media').css('display', 'flex');
     
 })
+
+$('.description-des').click(function() {
+     $('html, body').animate({scrollTop: '+=550px'}, 800);
+     $('.des-examples').css('display', 'flex');
+    
+})
+
+$('.description-about').click(function() {
+     $('html, body').animate({scrollTop: '+=550px'}, 800);
+     $('.about-text').css('display', 'block');
+    
+})
+
+$('.description-photo').click(function() {
+     $('html, body').animate({scrollTop: '+=550px'}, 800);
+     $('.photo-examples').css('display', 'flex');
+    
+})
+
+$('.description-art').click(function() {
+     $('html, body').animate({scrollTop: '+=550px'}, 800);
+     $('.artwork-flex').css('display', 'flex');
+    
+})
+
+$('.description-dev').click(function() {
+     $('html, body').animate({scrollTop: '+=550px'}, 800);
+     $('.dev-examples').css('display', 'block');
+    
+})
+
 
 });
 

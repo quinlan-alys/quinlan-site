@@ -114,13 +114,13 @@ body {
       width: 500px; } }
 
 .home-sect {
-  display: none; }
+  display: block; }
 
-.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect {
   height: 0px;
   overflow: hidden; }
   @media (min-width: 1000px) {
-    .contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect {
+    .contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect {
       margin-top: 0px; } }
 
 .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
@@ -149,7 +149,7 @@ body {
     .sect-title-dev, .sect-title-photo {
       font-size: 46px; } }
 
-.description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo {
+.description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo {
   width: 200px;
   text-align: center;
   font-family: arial black;
@@ -159,7 +159,7 @@ body {
   box-shadow: 3px 3px 5px 1px #ccc;
   border: 1px solid lightgrey;
   color: lightgrey; }
-  .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover, .description-des:hover, .description-photo:hover {
+  .description:hover, .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover, .description-des:hover, .description-photo:hover {
     color: #878787;
     box-shadow: 3px 3px 5px 1px #878787; }
 
@@ -229,7 +229,8 @@ li:hover span {
   width: 90%;
   font-weight: 100;
   line-height: 25px;
-  font-size: 15px; }
+  font-size: 15px;
+  display: none; }
   @media (min-width: 1000px) {
     .about-text {
       width: 600px; } }
@@ -248,6 +249,9 @@ li:hover span {
   @media (min-width: 1000px) {
     .about-image {
       height: 400px; } }
+
+.about-sect {
+  display: block; }
 
 .dev-image {
   background-color: white;
@@ -328,6 +332,9 @@ li:hover span {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.dev-examples {
+  display: none; }
+
 .art-image {
   background-color: white;
   width: 90%;
@@ -392,8 +399,7 @@ li:hover span {
   background-color: maroon; }
 
 .artwork-flex {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -562,12 +568,15 @@ li:hover span {
       height: 400px; } }
 
 .des-examples {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 80%;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin: 10% auto; }
+  margin: 10% auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .photo-image {
   background-color: white;
@@ -598,10 +607,10 @@ li:hover span {
   .photo-work1 p, .photo-work2 p, .photo-work3 p {
     font-family: helvetica;
     font-weight: 100;
-    color: white; }
+    color: white;
+    padding: 5%; }
 
 .photo-examples {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
