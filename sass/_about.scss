@@ -1,0 +1,32 @@
+
+// about styles -==================
+
+.about-text {
+
+    margin: 70px auto;
+    font-family: helvetica;
+    color: pink;
+    width:90%;
+    font-weight: 100;
+    line-height: 25px;
+    font-size:15px;
+
+    @include desktop {
+        width: 600px;
+
+    }
+}
+
+.about-image {
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+        height:400px;
+    }
+}

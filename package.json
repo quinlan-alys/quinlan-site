@@ -1,7 +1,7 @@
 {
   "name": "project02",
   "version": "1.0.0",
-  "description": "\"instanews project\"",
+  "description": "\"quinlan portfolio\"",
   "main": "main.js",
   "scripts": {
     "test": "start"

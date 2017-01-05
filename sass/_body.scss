@@ -38,12 +38,12 @@ body {
 }
 
 .home-sect {
-    display:block;
+    display:none;
 }
-.contact-sect, .about-sect {
+.contact-sect, .about-sect, .dev-sect {
     height:0px;
     overflow:hidden;
-    margin-top: 90px;
+    // margin-top: 90px;
 
     @include desktop {
     margin-top: 0px;
@@ -52,7 +52,7 @@ body {
 
 //title and description styles -------------------------
 
-.sect-title-contact, .sect-title-about {
+.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art {
     text-align: center;
     font-family: arial black;
     text-transform: uppercase;
@@ -68,128 +68,47 @@ body {
     }
 }
 
-.description-contact, .description-about{
+.sect-title-art {
+    width:40%;
+
+    @include desktop {
+        width:15%;
+    }
+}
+
+.sect-title-dev {
+    font-size:2.2rem;
+    @include desktop {
+        font-size: 47px;
+    }
+}
+
+.description-contact, .description-about, .description-dev, .description-art{
     width: 200px;
     text-align: center;
     font-family: arial black;
     text-transform: uppercase;
     font-size: 28px;
     margin: 20px auto;
+    box-shadow: 3px 3px 5px 1px #ccc;
     border: 1px solid $light-grey;
     color: $light-grey;
 
+    &:hover {
+         color: darken(lightgrey, 30%);
+         box-shadow: 3px 3px 5px 1px darken(lightgrey, 30%);
+        
+    }
+
 }
 
-.description-about {
+.description-about, .description-dev {
     width:300px;
 }
 
-.social-media {
-    display:flex;
-    margin: 0 auto;
-  
-
-    ul {
-    list-style: none;
-    padding:0;
-    margin: 4% auto;
-    width: 260px;
-    display:flex;
-    text-align:center;
-
-    li {
-        font-weight: 100;
-
-        &:nth-child(1) {
-            margin-left:10px;
-
-            @include desktop {
-            margin-left:11px;
-        }
-        }
-        
-        i {
-            font-size:70px;
-            color:white;
-
-             &:hover {
-                color: lighten( $pink-font-color,  50%);
-        }
-
-        }
-
-        a {
-            text-decoration:none;
-        }
-        span {
-            color: white; 
-            font-family: "helvetica";
-            font-weight: 100;
-            text-decoration: none;
-            margin-left:10px;
-        
-        }
-    }
-    }
+.description-art {
+    width:250px;
 }
 
-// css transitions 
 
 
-span {
-    overflow: hidden;
-    list-style: none;
-    white-space:nowrap;
-    margin-right: 10px;
-    border-radius: 25px;
-    display: inline-block;
-}
-   span {
-        opacity: 0;
-        color: #666;
-        max-width: 0;
-        display: inline-block;
-        text-decoration: none;
-        transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
-    }
-       
-
-  
-        li:hover span {
-            opacity: 1;
-            max-width: 150px;
-            transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
-        }
-
-
-// about styles -==================
-
-.about-text {
-
-    margin: 70px auto;
-    font-family: helvetica;
-    color: pink;
-    width:90%;
-    font-weight: 100;
-    line-height: 25px;
-    font-size:15px;
-
-    @include desktop {
-        width: 600px;
-
-    }
-}
-
-.about-image {
-    background-color:white;
-    width: 80%;
-    margin: 0 auto;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @include desktop {
-        height:400px;
-    }
-}

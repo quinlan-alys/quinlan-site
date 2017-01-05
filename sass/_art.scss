@@ -1,0 +1,125 @@
+.art-image {
+    background-color:white;
+    width: 90%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+        height:400px;
+    }
+}
+
+.art-work1 {
+    background-color: salmon;
+}
+.art-work2 {
+    background-color: mediumpurple;
+}
+.art-work3 {
+    background-color: yellowgreen;
+}
+.art-work4 {
+    background-color: yellow;
+}
+.art-work5 {
+    background-color: lime;
+}
+.art-work6 {
+    background-color: teal;
+}
+.art-work7 {
+    background-color: orange;
+}
+.art-work8 {
+    background-color: blue;
+}
+.art-work9 {
+    background-color: green;
+}
+.art-work10 {
+    background-color: red;
+}
+
+.art-work11 {
+    background-color: crimson;
+}
+
+.art-work12 {
+    background-color: deeppink;
+}
+
+.art-work13 {
+    background-color: grey;
+}
+
+.art-work14 {
+    background-color: sandybrown;
+}
+
+.art-work15 {
+    background-color: brown;
+}
+
+.art-work16 {
+    background-color: maroon;
+}
+
+.artwork-flex {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 26px auto;
+  
+}
+
+.art-work1,
+.art-work2, 
+.art-work3, 
+.art-work4, 
+.art-work5, 
+.art-work6, 
+.art-work7, 
+.art-work8,
+.art-work9, 
+.art-work10, 
+.art-work11, 
+.art-work12, 
+.art-work13, 
+.art-work14, 
+.art-work15, 
+.art-work16 {
+    flex-basis: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position:relative;
+
+    @include desktop {
+        flex-basis: 25%;
+    }
+
+p {
+    padding: 5%;
+    font-family:helvetica;
+    font-weight:100;
+    color:black;
+    background: rgba(0 ,0, 0,0.5);
+     position:absolute;
+    // bottom: 45px;
+    bottom: -100px;
+    overflow:hidden;
+
+
+   &:nth-child(2){
+    position:absolute;
+    // bottom: 45px;
+    bottom: -100px;
+   }
+}
+
+}
