@@ -114,16 +114,16 @@ body {
       width: 500px; } }
 
 .home-sect {
-  display: block; }
+  display: none; }
 
-.contact-sect, .about-sect, .dev-sect, .art-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect {
   height: 0px;
   overflow: hidden; }
   @media (min-width: 1000px) {
-    .contact-sect, .about-sect, .dev-sect, .art-sect {
+    .contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect {
       margin-top: 0px; } }
 
-.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art {
+.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
   text-align: center;
   font-family: arial black;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ body {
   width: 90%;
   font-size: 4rem; }
   @media (min-width: 1000px) {
-    .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art {
+    .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
       width: 400px;
       font-size: 70px; } }
 
@@ -143,13 +143,13 @@ body {
     .sect-title-art {
       width: 15%; } }
 
-.sect-title-dev {
+.sect-title-dev, .sect-title-photo {
   font-size: 2.2rem; }
   @media (min-width: 1000px) {
-    .sect-title-dev {
-      font-size: 47px; } }
+    .sect-title-dev, .sect-title-photo {
+      font-size: 46px; } }
 
-.description-contact, .description-about, .description-dev, .description-art {
+.description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo {
   width: 200px;
   text-align: center;
   font-family: arial black;
@@ -159,7 +159,7 @@ body {
   box-shadow: 3px 3px 5px 1px #ccc;
   border: 1px solid lightgrey;
   color: lightgrey; }
-  .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover {
+  .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover, .description-des:hover, .description-photo:hover {
     color: #878787;
     box-shadow: 3px 3px 5px 1px #878787; }
 
@@ -170,8 +170,7 @@ body {
   width: 250px; }
 
 .social-media {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin: 0 auto; }
   .social-media ul {
     list-style: none;
@@ -526,3 +525,83 @@ li:hover span {
     .art-work16 p:nth-child(2) {
       position: absolute;
       bottom: -100px; }
+
+.des-work1, .des-work2, .des-work3 {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: red;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: white;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex; }
+  .des-work1 p, .des-work2 p, .des-work3 p {
+    bottom: 120px;
+    left: 20px;
+    position: absolute;
+    font-family: helvetica;
+    font-weight: 100; }
+
+.des-image {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  height: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 1000px) {
+    .des-image {
+      height: 400px; } }
+
+.des-examples {
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 10% auto; }
+
+.photo-image {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 1000px) {
+    .photo-image {
+      height: 400px; } }
+
+.photo-work1, .photo-work2, .photo-work3 {
+  height: 400px;
+  width: 250px;
+  margin: 5% auto;
+  background-color: green;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .photo-work1 p, .photo-work2 p, .photo-work3 p {
+    font-family: helvetica;
+    font-weight: 100;
+    color: white; }
+
+.photo-examples {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

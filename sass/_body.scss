@@ -38,9 +38,9 @@ body {
 }
 
 .home-sect {
-    display:block;
+    display:none;
 }
-.contact-sect, .about-sect, .dev-sect, .art-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect {
     height:0px;
     overflow:hidden;
     // margin-top: 90px;
@@ -52,7 +52,7 @@ body {
 
 //title and description styles -------------------------
 
-.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art {
+.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
     text-align: center;
     font-family: arial black;
     text-transform: uppercase;
@@ -76,14 +76,14 @@ body {
     }
 }
 
-.sect-title-dev {
+.sect-title-dev, .sect-title-photo {
     font-size:2.2rem;
     @include desktop {
-        font-size: 47px;
+        font-size: 46px;
     }
 }
 
-.description-contact, .description-about, .description-dev, .description-art{
+.description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo{
     width: 200px;
     text-align: center;
     font-family: arial black;

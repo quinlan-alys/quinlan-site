@@ -1,0 +1,35 @@
+.photo-image {
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+        height:400px;
+    }
+}
+
+.photo-work1, .photo-work2, .photo-work3 {
+    height:400px;
+    width: 250px;
+    margin:5% auto;
+    background-color:green;
+    display:flex;
+    justify-content: flex-end;
+    flex-direction:column;
+
+    p {
+        font-family:helvetica;
+        font-weight:100;
+        color:white;
+    }
+
+}
+
+.photo-examples {
+    display:flex;
+    flex-wrap:wrap;
+}
