@@ -12,6 +12,18 @@ $('.logo').click(function() {
     $('.photo-sect').css('display', 'none');
 }) 
 
+$('.home-li').click(function() {
+    // $('.home-sect').animate({display:'none'}, 1000);
+    $('.home-sect').css('display','block');
+    $('.menu ul li').animate({height: '0px'}, 1000)
+    $('.contact-sect').css('display', 'none');
+    $('.about-sect').css('display', 'none');
+    $('.dev-sect').css('display', 'none');
+    $('.des-sect').css('display', 'none');
+    $('.art-sect').css('display', 'none');
+    $('.photo-sect').css('display', 'none');
+}) 
+
 $('.description').click(function() {
     // $('.home-sect').animate({display:'none'}, 1000);
     $('.home-sect').css('display','none');
@@ -80,39 +92,31 @@ $('.photo-li').click(function() {
 
 //display content of catagories on description click
 
-$('.description-contact').click(function() {
-
-     $('.social-media').css('display', 'flex');
-    
-})
 
 $('.description-des').click(function() {
      $('html, body').animate({scrollTop: '+=550px'}, 800);
-     $('.des-examples').css('display', 'flex');
     
 })
 
 $('.description-about').click(function() {
      $('html, body').animate({scrollTop: '+=550px'}, 800);
-     $('.about-text').css('display', 'block');
+  
     
 })
 
 $('.description-photo').click(function() {
      $('html, body').animate({scrollTop: '+=550px'}, 800);
-     $('.photo-examples').css('display', 'flex');
+
     
 })
 
 $('.description-art').click(function() {
      $('html, body').animate({scrollTop: '+=550px'}, 800);
-     $('.artwork-flex').css('display', 'flex');
-    
+
 })
 
 $('.description-dev').click(function() {
      $('html, body').animate({scrollTop: '+=550px'}, 800);
-     $('.dev-examples').css('display', 'block');
     
 })
 

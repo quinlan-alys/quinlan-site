@@ -54,7 +54,7 @@ header {
 
 .logo {
   height: 66px;
-  width: 90px; }
+  width: 66px; }
 
 .menu {
   margin: 3%; }
@@ -156,12 +156,12 @@ body {
   text-transform: uppercase;
   font-size: 28px;
   margin: 20px auto;
-  box-shadow: 3px 3px 5px 1px #ccc;
+  box-shadow: 3px 3px 0px 1px #ccc;
   border: 1px solid lightgrey;
   color: lightgrey; }
   .description:hover, .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover, .description-des:hover, .description-photo:hover {
     color: #878787;
-    box-shadow: 3px 3px 5px 1px #878787; }
+    box-shadow: 3px 3px 0px 1px #878787; }
 
 .description-about, .description-dev {
   width: 300px; }
@@ -170,7 +170,8 @@ body {
   width: 250px; }
 
 .social-media {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto; }
   .social-media ul {
     list-style: none;
@@ -229,14 +230,14 @@ li:hover span {
   width: 90%;
   font-weight: 100;
   line-height: 25px;
-  font-size: 15px;
-  display: none; }
+  font-size: 15px; }
   @media (min-width: 1000px) {
     .about-text {
       width: 600px; } }
 
 .about-image {
-  background-color: white;
+  background: url(../../images/blurryface.png);
+  background-size: cover;
   width: 80%;
   margin: 0 auto;
   height: 300px;
@@ -254,7 +255,8 @@ li:hover span {
   display: block; }
 
 .dev-image {
-  background-color: white;
+  background: url(../../images/development.jpg);
+  background-size: cover;
   width: 90%;
   margin: 0 auto;
   height: 300px;
@@ -269,7 +271,8 @@ li:hover span {
       height: 400px; } }
 
 .dev-work1 {
-  background-color: tomato;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/instanews.png);
+  background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
@@ -283,10 +286,16 @@ li:hover span {
       justify-content: center;
   display: -ms-flexbox;
   display: flex; }
+  .dev-work1:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/instanews.png); }
+  .dev-work1 p:first-child {
+    font-family: 'arial black';
+    margin-bottom: 15px; }
 
 .dev-work2 {
-  background-color: red;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/yell.png);
   width: 90%;
+  background-size: cover;
   margin: 12px auto;
   text-align: center;
   font-family: helvetica;
@@ -299,9 +308,15 @@ li:hover span {
       justify-content: center;
   display: -ms-flexbox;
   display: flex; }
+  .dev-work2:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/yell.png); }
+  .dev-work2 p:first-child {
+    font-family: 'arial black';
+    margin-bottom: 15px; }
 
 .dev-work3 {
-  background-color: purple;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/puppy.png);
+  background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
@@ -315,9 +330,15 @@ li:hover span {
       justify-content: center;
   display: -ms-flexbox;
   display: flex; }
+  .dev-work3:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/puppy.png); }
+  .dev-work3 p:first-child {
+    font-family: 'arial black';
+    margin-bottom: 15px; }
 
 .dev-work4 {
-  background-color: pink;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/aloha.png);
+  background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
@@ -331,9 +352,16 @@ li:hover span {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .dev-work4:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/aloha.png); }
+  .dev-work4 p:first-child {
+    font-family: 'arial black';
+    margin-bottom: 15px; }
 
 .dev-examples {
-  display: none; }
+  margin-top: 50px; }
+  .dev-examples a {
+    text-decoration: none; }
 
 .art-image {
   background-color: white;
@@ -399,7 +427,8 @@ li:hover span {
   background-color: maroon; }
 
 .artwork-flex {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -553,7 +582,8 @@ li:hover span {
     font-weight: 100; }
 
 .des-image {
-  background-color: white;
+  background: url(../../images/design.png);
+  background-size: cover;
   width: 90%;
   margin: 0 auto;
   height: 300px;
@@ -568,15 +598,14 @@ li:hover span {
       height: 400px; } }
 
 .des-examples {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   width: 80%;
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin: 10% auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
+      flex-wrap: wrap; }
 
 .photo-image {
   background-color: white;
@@ -611,6 +640,7 @@ li:hover span {
     padding: 5%; }
 
 .photo-examples {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }

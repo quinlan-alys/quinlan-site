@@ -10,7 +10,7 @@
     font-weight: 100;
     line-height: 25px;
     font-size:15px;
-    display:none;
+  
 
     @include desktop {
         width: 600px;
@@ -19,7 +19,8 @@
 }
 
 .about-image {
-    background-color:white;
+    background: url(../../images/blurryface.png);
+    background-size:cover;
     width: 80%;
     margin: 0 auto;
     height: 300px;

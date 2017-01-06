@@ -22,7 +22,8 @@
 }
 
 .des-image {
-    background-color:white;
+    background: url(../../images/design.png);
+    background-size:cover;
     width: 90%;
     margin: 0 auto;
     height: 300px;
@@ -36,10 +37,10 @@
 }
 
 .des-examples {
-    display:none;
+    display:flex;
     width:80%;
     justify-content:space-between;
     margin:10% auto;
     flex-wrap: wrap;
-    justify-content: center;
+   
 }
