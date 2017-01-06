@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-$('.logo').click(function() {
+$('.fa-bars').click(function() {
     // $('.home-sect').animate({display:'none'}, 1000);
     $('.home-sect').css('display','none');
     $('.menu ul li').animate({height: '20px'}, 1000)
@@ -59,7 +59,7 @@ $('.dev-li').click(function() {
     
      $('.dev-sect').css('display', 'block');
     $('.dev-sect').animate({height: '1000px'}, 1000)
-    $('.dev-sect').css('margin-top', '90px');
+    // $('.dev-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
 

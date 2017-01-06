@@ -9,13 +9,13 @@ body {
     text-align: center;
     font-family: arial black;
     text-transform: uppercase;
-    font-size: 3rem;
-    margin: 20% auto;
+    font-size: 2.3rem;
+    margin: 10% auto;
     border: 1px solid pink;
     color: pink;
 
     @include desktop {
-        width:300px;
+        width:600px;
         font-size:70px;
         margin: 0 auto;
     }
