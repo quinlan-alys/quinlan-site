@@ -46,8 +46,12 @@ body {
     // margin-top: 90px;
 
     @include desktop {
-    margin-top: 0px;
+    margin-top: -300px;
     }
+}
+
+.contact-sect {
+    margin-top:-4%;
 }
 
 //title and description styles -------------------------

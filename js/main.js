@@ -126,7 +126,7 @@ $('.description-dev').click(function() {
 
 //popup gallery
 
-$('.parent-container').magnificPopup({
+$('.photo-work1').magnificPopup({
   delegate: 'a', // child items selector, by clicking on it popup will open
   type: 'image',
   gallery: {enabled:true}

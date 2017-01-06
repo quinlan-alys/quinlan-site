@@ -3,13 +3,13 @@
     background-size:cover;
     width: 90%;
     margin: 0 auto;
-    height: 300px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @include desktop {
-        height:400px;
+        height:100vh;
     }
 }
 
@@ -47,18 +47,23 @@
     position:relative;
     overflow:hidden;
 
-    &:hover p:nth-child(2) {
+      &:hover p {
         bottom: 0;
     }
-     &:hover p:nth-child(1) {
-        bottom: 45px;
+     
+
+    span {
+        font-style:italic;
+    }
+    &:hover span {
+        bottom: 0px;
     }
 
     @include desktop {
         flex-basis: 25%;
     }
 
-p {
+p, span {
     padding: 5%;
     font-family:helvetica;
     font-weight:100;
@@ -71,10 +76,10 @@ p {
     overflow:hidden;
 
 
-   &:nth-child(2){
-    position:absolute;
-    bottom: -100px;
-   }
+//    &:nth-child(2){
+//     position:absolute;
+//     bottom: -100px;
+//    }
 }
 
 }
@@ -110,11 +115,11 @@ p {
     background-size:cover;
 }
 .art-work8 {
-    background: url(../../images/art/art8.tif);
+    background: url(../../images/art/art8.jpg);
     background-size:cover;
 }
 .art-work9 {
-    background: url(../../images/art/art9.tif);
+    background: url(../../images/art/art9.jpg);
     background-size:cover;
 }
 .art-work10 {
