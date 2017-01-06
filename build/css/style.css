@@ -367,7 +367,8 @@ li:hover span {
     text-decoration: none; }
 
 .art-image {
-  background-color: white;
+  background: url(../../images/art/sonderfirstimage.jpg);
+  background-size: cover;
   width: 90%;
   margin: 0 auto;
   height: 300px;
@@ -380,54 +381,6 @@ li:hover span {
   @media (min-width: 1000px) {
     .art-image {
       height: 400px; } }
-
-.art-work1 {
-  background-color: salmon; }
-
-.art-work2 {
-  background-color: mediumpurple; }
-
-.art-work3 {
-  background-color: yellowgreen; }
-
-.art-work4 {
-  background-color: yellow; }
-
-.art-work5 {
-  background-color: lime; }
-
-.art-work6 {
-  background-color: teal; }
-
-.art-work7 {
-  background-color: orange; }
-
-.art-work8 {
-  background-color: blue; }
-
-.art-work9 {
-  background-color: green; }
-
-.art-work10 {
-  background-color: red; }
-
-.art-work11 {
-  background-color: crimson; }
-
-.art-work12 {
-  background-color: deeppink; }
-
-.art-work13 {
-  background-color: grey; }
-
-.art-work14 {
-  background-color: sandybrown; }
-
-.art-work15 {
-  background-color: brown; }
-
-.art-work16 {
-  background-color: maroon; }
 
 .artwork-flex {
   display: -ms-flexbox;
@@ -563,6 +516,70 @@ li:hover span {
     .art-work16 p:nth-child(2) {
       position: absolute;
       bottom: -100px; }
+
+.art-work1 {
+  background: url(../../images/art/art1.jpg);
+  background-size: cover; }
+
+.art-work2 {
+  background: url(../../images/art/art2.jpg);
+  background-size: cover; }
+
+.art-work3 {
+  background: url(../../images/art/art3.jpg);
+  background-size: cover; }
+
+.art-work4 {
+  background: url(../../images/art/art4.jpg);
+  background-size: cover; }
+
+.art-work5 {
+  background: url(../../images/art/art5.jpg);
+  background-size: cover; }
+
+.art-work6 {
+  background: url(../../images/art/art6.jpg);
+  background-size: cover; }
+
+.art-work7 {
+  background: url(../../images/art/art7.jpg);
+  background-size: cover; }
+
+.art-work8 {
+  background: url(../../images/art/art8.tif);
+  background-size: cover; }
+
+.art-work9 {
+  background: url(../../images/art/art9.tif);
+  background-size: cover; }
+
+.art-work10 {
+  background: url(../../images/art/art10.jpg);
+  background-size: cover; }
+
+.art-work11 {
+  background: url(../../images/art/art11.jpg);
+  background-size: cover; }
+
+.art-work12 {
+  background: url(../../images/art/art12.png);
+  background-size: cover; }
+
+.art-work13 {
+  background: url(../../images/art/art13.png);
+  background-size: cover; }
+
+.art-work14 {
+  background: url(../../images/art/art14.png);
+  background-size: cover; }
+
+.art-work15 {
+  background: url(../../images/art/art15.png);
+  background-size: cover; }
+
+.art-work16 {
+  background: url(../../images/art/art16.jpg);
+  background-size: cover; }
 
 .des-work1, .des-work2, .des-work3 {
   height: 250px;
