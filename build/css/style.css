@@ -645,7 +645,7 @@ li:hover span {
       flex-wrap: wrap; }
 
 .photo-image {
-  background: url(../../images/photohero.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photohero.jpg);
   width: 80%;
   margin: 0 auto;
   height: 100vh;
@@ -654,7 +654,8 @@ li:hover span {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-size: cover; }
   @media (min-width: 1000px) {
     .photo-image {
       height: 100vh; } }
@@ -679,7 +680,9 @@ li:hover span {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto; }
 
 .photo-work1 {
   background: url(../../images/headshot.png);

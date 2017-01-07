@@ -1,12 +1,12 @@
 .photo-image {
-    background: url(../../images/photohero.jpg);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/photohero.jpg);
     width: 80%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background-size:cover;
     @include desktop {
         height:100vh;
     }
@@ -32,6 +32,8 @@
 .photo-examples {
     display:flex;
     flex-wrap:wrap;
+    width:90%;
+    margin: 0 auto;
 }
 
 .photo-work1 {

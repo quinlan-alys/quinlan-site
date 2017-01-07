@@ -50,7 +50,7 @@ $('.description-contact').click(function() {
 $('.about-li').click(function() {
  
      $('.about-sect').css('display', 'block');
-    $('.about-sect').animate({height: '1000px'}, 1000)
+    $('.about-sect').animate({height: '1300px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
 })
 
