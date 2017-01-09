@@ -7,11 +7,11 @@ body {
     
     width: 50%;
     text-align: center;
-    font-family: arial black;
+    font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     font-size: 2.3rem;
     margin: 10% auto;
-    border: 1px solid pink;
+    // border: 1px solid pink;
     color: pink;
 
     @include desktop {
@@ -24,7 +24,7 @@ body {
 .description {
     width: 90%;
     text-align: center;
-    font-family: arial black;
+    font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     font-size: 28px;
     margin: 20px auto;
@@ -58,10 +58,12 @@ body {
 
 .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
     text-align: center;
-    font-family: arial black;
+    // font-family: arial black;
+    // font-family: 'Bungee Shade', cursive;
+    font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     margin: 0 auto;
-    border: 1px solid pink;
+    // border: 1px solid pink;
     color: pink;
     width: 90%;
     font-size: 4rem;
@@ -90,7 +92,9 @@ body {
 .description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo{
     width: 200px;
     text-align: center;
-    font-family: arial black;
+    // font-family: 'Bungee Shade', cursive;
+    font-family: 'Comfortaa', cursive;
+    // font-family: arial black;
     text-transform: uppercase;
     font-size: 28px;
     margin: 20px auto;

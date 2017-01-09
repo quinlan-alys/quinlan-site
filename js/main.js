@@ -58,7 +58,7 @@ $('.about-li').click(function() {
 $('.dev-li').click(function() {
     
      $('.dev-sect').css('display', 'block');
-    $('.dev-sect').animate({height: '1000px'}, 1000)
+    $('.dev-sect').animate({height: '1800px'}, 1000)
     // $('.dev-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 
