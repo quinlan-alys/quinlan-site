@@ -76,7 +76,7 @@ header {
       color: #878787; }
     .menu li:nth-child(7) {
       font-weight: 500;
-      color: pink; }
+      color: #FF2D49; }
 
 .name {
   margin: 11% 11% 11% 15%;
@@ -104,7 +104,7 @@ body {
   text-transform: uppercase;
   font-size: 2.3rem;
   margin: 10% auto;
-  color: pink; }
+  color: #FF2D49; }
   @media (min-width: 1000px) {
     .sect-title {
       width: 600px;
@@ -142,7 +142,7 @@ body {
   font-family: 'Comfortaa', cursive;
   text-transform: uppercase;
   margin: 0 auto;
-  color: pink;
+  color: #FF2D49;
   width: 90%;
   font-size: 4rem; }
   @media (min-width: 1000px) {
@@ -239,7 +239,7 @@ li:hover span {
 .about-text {
   margin: 70px auto;
   font-family: 'helvetica neue';
-  color: pink;
+  color: #FF2D49;
   width: 90%;
   font-weight: 100;
   line-height: 25px;
@@ -719,11 +719,13 @@ li:hover span {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .des-examples p {
-    font-family: 'helvetica neue';
+  .des-examples p:nth-child(4) {
+    font-family: 'Comfortaa';
     font-weight: 100;
     color: lightgrey;
-    margin-top: 15px; }
+    margin-top: 30px;
+    width: 100%;
+    text-align: center; }
 
 .des-work1 {
   background: url(../../images/marriedbykayla.png); }
@@ -807,7 +809,7 @@ li:hover span {
 
 .photo-text {
   font-family: 'helvetica neue';
-  color: pink;
+  color: #FF2D49;
   text-align: center;
   font-weight: 100;
   margin: 11% 16% 150px 9%; }

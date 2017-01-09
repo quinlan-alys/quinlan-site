@@ -12,7 +12,7 @@ $('.fa-bars').click(function() {
     $('.photo-sect').css('display', 'none');
 }) 
 
-$('.home-li').click(function() {
+$('.home-li' && '.name').click(function() {
     // $('.home-sect').animate({display:'none'}, 1000);
     $('.home-sect').css('display','block');
     $('.menu ul li').animate({height: '0px'}, 1000)
