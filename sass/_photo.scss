@@ -21,10 +21,14 @@
     flex-direction:column;
 
     p {
-        font-family:helvetica;
+        font-family:'helvetica neue';
         font-weight:100;
         color:white;
         padding: 150% 5% 5% 5%;
+    }
+
+    a {
+        text-decoration:none;
     }
 
 }

@@ -5,7 +5,6 @@
     height:250px;
     width:250px;
     border-radius:50%;
-    background-color:red;
     justify-content: flex-end;
     flex-direction: column;
     color: white;
@@ -16,7 +15,7 @@
     bottom: 120px;
     left: 20px;
     position: absolute;
-    font-family:helvetica;
+    font-family:'helvetica neue';
     font-weight:100;
     }
 }
@@ -30,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 
     @include desktop {
         height:100vh;
@@ -42,5 +42,42 @@
     justify-content:space-between;
     margin:10% auto;
     flex-wrap: wrap;
+    justify-content:center;
+
+    p {
+        font-family:'helvetica neue';
+        font-weight:100;
+        color:lightgrey;
+        margin-top:15px;
+    }
    
+}
+
+.des-work1 {
+
+    background: url(../../images/marriedbykayla.png);
+
+  &:hover {
+         background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/marriedbykayla.png);
+    }
+}
+
+.des-work2 {
+
+    background: url(../../images/potats.jpg) center;
+    background-position-y: 50%;
+
+      &:hover {
+         background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/potats.jpg);
+    }
+}
+
+.des-work3 {
+
+    background: url(../../images/quinlansite.png);
+
+  &:hover {
+         background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/quinlansite.png);
+    }
+    
 }

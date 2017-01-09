@@ -1,5 +1,5 @@
 .dev-image {
-    background: url(../../images/development.jpg);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ),url(../../images/development.jpg);
     background-size:cover;
     width: 90%;
     margin: 0 auto;
@@ -14,12 +14,12 @@
 }
 
 .dev-work1{
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/instanews.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/instanews.png);
      background-size:cover;
     width: 90%;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
@@ -32,17 +32,17 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
        margin-bottom:15px;
    }
 }
 .dev-work2 {
-    background:linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/yell.png);
+    background:linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/yell.png);
     width: 90%;
      background-size:cover;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
@@ -55,18 +55,18 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 }
 
 .dev-work3 {
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/puppy.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/puppy.png);
      background-size:cover;
     width: 90%;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
@@ -79,19 +79,19 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 
 }
 
 .dev-work4 {
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/aloha.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/aloha.png);
     background-size:cover;
     width: 90%;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
@@ -105,43 +105,43 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 }
 
 .dev-work5 {
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/drumkit.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/drumkit.png);
     background-size:cover;
     width: 33%;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
     flex-direction: column;
     display:flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
 
     &:hover {
          background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/drumkit.png);
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 }
 
 .dev-work6 {
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/clock.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/clock.png);
     background-size:cover;
     width: 33%;
     margin: 12px auto;
     text-align: center;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     height: 100px;
@@ -154,13 +154,13 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 }
 
 .dev-work7 {
-    background: linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100% ), url(../../images/photofun.png);
+    background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/photofun.png);
     background-size:cover;
     width: 33%;
     margin: 12px auto;
@@ -178,7 +178,7 @@
     }
 
      p:first-child {
-       font-family: 'arial black';
+       font-family: 'Comfortaa';
         margin-bottom:15px;
    }
 }

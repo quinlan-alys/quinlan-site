@@ -76,7 +76,7 @@ $('.art-li').click(function() {
 $('.design-li').click(function() {
 
      $('.des-sect').css('display', 'block');
-    $('.des-sect').animate({height: '1200px'}, 1000)
+    $('.des-sect').animate({height: '1500px'}, 1000)
     // $('.des-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 

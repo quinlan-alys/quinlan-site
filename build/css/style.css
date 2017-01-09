@@ -74,9 +74,18 @@ header {
     font-weight: 100; }
     .menu li:hover {
       color: #878787; }
+    .menu li:nth-child(7) {
+      font-weight: 500;
+      color: pink; }
 
 .name {
-  margin: 11% 11% 11% 15%; }
+  margin: 11% 11% 11% 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
   @media (min-width: 1000px) {
     .name {
       margin-top: 7%; } }
@@ -229,7 +238,7 @@ li:hover span {
 
 .about-text {
   margin: 70px auto;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   color: pink;
   width: 90%;
   font-weight: 100;
@@ -242,7 +251,7 @@ li:hover span {
 .about-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/blurryface.png);
   background-size: cover;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -259,7 +268,7 @@ li:hover span {
   display: block; }
 
 .dev-image {
-  background: url(../../images/development.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/development.jpg);
   background-size: cover;
   width: 90%;
   margin: 0 auto;
@@ -275,12 +284,12 @@ li:hover span {
       height: 100vh; } }
 
 .dev-work1 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/instanews.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/instanews.png);
   background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -293,16 +302,16 @@ li:hover span {
   .dev-work1:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/instanews.png); }
   .dev-work1 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work2 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/yell.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/yell.png);
   width: 90%;
   background-size: cover;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -315,16 +324,16 @@ li:hover span {
   .dev-work2:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/yell.png); }
   .dev-work2 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work3 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/puppy.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/puppy.png);
   background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -337,16 +346,16 @@ li:hover span {
   .dev-work3:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/puppy.png); }
   .dev-work3 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work4 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/aloha.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/aloha.png);
   background-size: cover;
   width: 90%;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -360,16 +369,16 @@ li:hover span {
   .dev-work4:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/aloha.png); }
   .dev-work4 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work5 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/drumkit.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/drumkit.png);
   background-size: cover;
   width: 33%;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -379,20 +388,20 @@ li:hover span {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 10%; }
+  margin-top: 5%; }
   .dev-work5:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/drumkit.png); }
   .dev-work5 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work6 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/clock.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/clock.png);
   background-size: cover;
   width: 33%;
   margin: 12px auto;
   text-align: center;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
   font-weight: 100;
   color: white;
   height: 100px;
@@ -405,11 +414,11 @@ li:hover span {
   .dev-work6:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/clock.png); }
   .dev-work6 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-work7 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photofun.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/photofun.png);
   background-size: cover;
   width: 33%;
   margin: 12px auto;
@@ -427,7 +436,7 @@ li:hover span {
   .dev-work7:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/photofun.png); }
   .dev-work7 p:first-child {
-    font-family: 'arial black';
+    font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
 .dev-examples {
@@ -668,7 +677,6 @@ li:hover span {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background-color: red;
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-direction: column;
@@ -681,7 +689,7 @@ li:hover span {
     bottom: 120px;
     left: 20px;
     position: absolute;
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100; }
 
 .des-image {
@@ -708,7 +716,30 @@ li:hover span {
       justify-content: space-between;
   margin: 10% auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .des-examples p {
+    font-family: 'helvetica neue';
+    font-weight: 100;
+    color: lightgrey;
+    margin-top: 15px; }
+
+.des-work1 {
+  background: url(../../images/marriedbykayla.png); }
+  .des-work1:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/marriedbykayla.png); }
+
+.des-work2 {
+  background: url(../../images/potats.jpg) center;
+  background-position-y: 50%; }
+  .des-work2:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/potats.jpg); }
+
+.des-work3 {
+  background: url(../../images/quinlansite.png); }
+  .des-work3:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/quinlansite.png); }
 
 .photo-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photohero.jpg);
@@ -737,10 +768,12 @@ li:hover span {
   -ms-flex-direction: column;
       flex-direction: column; }
   .photo-work1 p, .photo-work2 p, .photo-work3 p {
-    font-family: helvetica;
+    font-family: 'helvetica neue';
     font-weight: 100;
     color: white;
     padding: 150% 5% 5% 5%; }
+  .photo-work1 a, .photo-work2 a, .photo-work3 a {
+    text-decoration: none; }
 
 .photo-examples {
   display: -ms-flexbox;
