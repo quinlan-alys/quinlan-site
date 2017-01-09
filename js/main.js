@@ -40,6 +40,7 @@ $('.contact-li').click(function() {
 
 $('.description-contact').click(function() {
     $('.about-sect').css('display', 'none');
+    $('.photo-sect').css('display', 'none');
       $('.contact-sect').css('display', 'block');
     $('.contact-sect').animate({height: '500px'}, 1000)
 

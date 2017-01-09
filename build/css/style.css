@@ -60,11 +60,11 @@ header {
   margin: 12% 0% 12% 12%; }
   .menu i {
     color: lightgrey;
-    font-size: 54px;
+    font-size: 25px;
     text-align: center; }
   @media (min-width: 1000px) {
     .menu {
-      margin: 8%; } }
+      margin: 8% 10% 8% 8%; } }
   .menu li {
     font-family: 'helvetica neue';
     height: 0px;
@@ -778,19 +778,36 @@ li:hover span {
 .photo-examples {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
   width: 90%;
   margin: 0 auto; }
+  @media (min-width: 1000px) {
+    .photo-examples {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      width: 50%; } }
 
 .photo-work1 {
   background: url(../../images/headshot.png);
   background-size: cover; }
+  @media (min-width: 1000px) {
+    .photo-work1 {
+      width: 233%; } }
 
 .photo-work2 {
   background: url(../../images/landscape.png);
-  background-size: cover; }
+  background-size: cover;
+  display: none; }
 
 .photo-work3 {
   background: url(../../images/experimental.png);
-  background-size: cover; }
+  background-size: cover;
+  display: none; }
+
+.photo-text {
+  font-family: 'helvetica neue';
+  color: pink;
+  text-align: center;
+  font-weight: 100;
+  margin: 11% 16% 150px 9%; }

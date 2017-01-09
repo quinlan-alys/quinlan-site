@@ -35,22 +35,42 @@
 
 .photo-examples {
     display:flex;
-    flex-wrap:wrap;
+    flex-flow:column wrap;
     width:90%;
     margin: 0 auto;
+
+    @include desktop {
+        flex-flow:row nowrap;
+        width:50%;
+    }
 }
 
 .photo-work1 {
     background: url(../../images/headshot.png);
     background-size:cover;
+
+    @include desktop {
+    width:233%;
+}
 }
 
 .photo-work2 {
     background: url(../../images/landscape.png);
     background-size:cover;
+    display:none;
 }
 
 .photo-work3 {
     background: url(../../images/experimental.png);
     background-size:cover;
+    display:none;
+}
+.photo-text {
+    font-family:'helvetica neue';
+    color:pink;
+    text-align:center;
+    font-weight:100;
+   
+     margin: 11% 16% 150px 9%;
+  
 }
