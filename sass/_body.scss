@@ -40,7 +40,7 @@ body {
 .home-sect {
     display:block;
 }
-.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect, .resume-sect {
     height:0px;
     overflow:hidden;
     // margin-top: 90px;
@@ -50,20 +50,17 @@ body {
     }
 }
 
-.contact-sect {
+.contact-sect, .resume-sect {
     margin-top:-4%;
 }
 
 //title and description styles -------------------------
 
-.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
+.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo , .sect-title-resume{
     text-align: center;
-    // font-family: arial black;
-    // font-family: 'Bungee Shade', cursive;
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     margin: 0 auto;
-    // border: 1px solid pink;
     color: #FF2D49;
     width: 90%;
     font-size: 4rem;
@@ -89,12 +86,10 @@ body {
     }
 }
 
-.description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo{
+.description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo, .description-resume{
     width: 200px;
     text-align: center;
-    // font-family: 'Bungee Shade', cursive;
     font-family: 'Comfortaa', cursive;
-    // font-family: arial black;
     text-transform: uppercase;
     font-size: 28px;
     margin: 20px auto;
@@ -102,15 +97,15 @@ body {
     border: 1px solid $light-grey;
     color: $light-grey;
 
-    &:hover {
-         color: darken(lightgrey, 30%);
-         box-shadow: 3px 3px 0px 1px darken(lightgrey, 30%);
+    // &:hover {
+    //      color: darken(lightgrey, 30%);
+    //      box-shadow: 3px 3px 0px 1px darken(lightgrey, 30%);
         
-    }
+    // }
 
 }
 
-.description-about, .description-dev {
+.description-about, .description-dev, .description-resume {
     width:300px;
 }
 

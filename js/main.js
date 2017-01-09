@@ -10,6 +10,8 @@ $('.fa-bars').click(function() {
     $('.des-sect').css('display', 'none');
     $('.art-sect').css('display', 'none');
     $('.photo-sect').css('display', 'none');
+    $('.resume-sect').css('display', 'none');
+    
 }) 
 
 $('.home-li' && '.name').click(function() {
@@ -22,6 +24,8 @@ $('.home-li' && '.name').click(function() {
     $('.des-sect').css('display', 'none');
     $('.art-sect').css('display', 'none');
     $('.photo-sect').css('display', 'none');
+    $('.resume-sect').css('display', 'none');
+    
 }) 
 
 $('.description').click(function() {
@@ -87,6 +91,15 @@ $('.photo-li').click(function() {
 
      $('.photo-sect').css('display', 'block');
     $('.photo-sect').animate({height: '4500px'}, 1000)
+    // $('.photo-sect').css('margin-top', '90px');
+    $('.menu ul li').animate({height: '0px'}, 1000)
+}) 
+
+//display photography section and retract
+$('.resume-li').click(function() {
+
+     $('.resume-sect').css('display', 'block');
+    $('.resume-sect').animate({height: '4500px'}, 1000)
     // $('.photo-sect').css('margin-top', '90px');
     $('.menu ul li').animate({height: '0px'}, 1000)
 }) 

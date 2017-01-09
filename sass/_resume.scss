@@ -1,0 +1,29 @@
+.download {
+    a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 12px;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+
+       
+             &:hover {
+                color: white;
+                background-color:black;
+        }
+    }
+
+    p {
+        text-align:center;
+        color: #FF2D49;
+        margin-top:20px;
+        font-size:16px;
+        font-family:'helvetica neue';
+        font-weight:100;
+    }
+}

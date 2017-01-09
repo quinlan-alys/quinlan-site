@@ -74,7 +74,7 @@ header {
     font-weight: 100; }
     .menu li:hover {
       color: #878787; }
-    .menu li:nth-child(7) {
+    .menu li:nth-child(8) {
       font-weight: 500;
       color: #FF2D49; }
 
@@ -127,17 +127,17 @@ body {
 .home-sect {
   display: block; }
 
-.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect {
+.contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect, .resume-sect {
   height: 0px;
   overflow: hidden; }
   @media (min-width: 1000px) {
-    .contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect {
+    .contact-sect, .about-sect, .dev-sect, .art-sect, .des-sect, .photo-sect, .resume-sect {
       margin-top: -300px; } }
 
-.contact-sect {
+.contact-sect, .resume-sect {
   margin-top: -4%; }
 
-.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
+.sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo, .sect-title-resume {
   text-align: center;
   font-family: 'Comfortaa', cursive;
   text-transform: uppercase;
@@ -146,7 +146,7 @@ body {
   width: 90%;
   font-size: 4rem; }
   @media (min-width: 1000px) {
-    .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo {
+    .sect-title-contact, .sect-title-about, .sect-title-dev, .sect-title-art, .sect-title-des, .sect-title-photo, .sect-title-resume {
       width: 400px;
       font-size: 70px; } }
 
@@ -162,7 +162,7 @@ body {
     .sect-title-dev, .sect-title-photo {
       font-size: 46px; } }
 
-.description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo {
+.description, .description-contact, .description-about, .description-dev, .description-art, .description-des, .description-photo, .description-resume {
   width: 200px;
   text-align: center;
   font-family: 'Comfortaa', cursive;
@@ -172,11 +172,8 @@ body {
   box-shadow: 3px 3px 0px 1px #ccc;
   border: 1px solid lightgrey;
   color: lightgrey; }
-  .description:hover, .description-contact:hover, .description-about:hover, .description-dev:hover, .description-art:hover, .description-des:hover, .description-photo:hover {
-    color: #878787;
-    box-shadow: 3px 3px 0px 1px #878787; }
 
-.description-about, .description-dev {
+.description-about, .description-dev, .description-resume {
   width: 300px; }
 
 .description-art {
@@ -745,7 +742,7 @@ li:hover span {
 
 .photo-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photohero.jpg);
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -813,3 +810,28 @@ li:hover span {
   text-align: center;
   font-weight: 100;
   margin: 11% 16% 150px 9%; }
+
+.download a {
+  color: black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 50px;
+  padding: 12px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white; }
+  .download a:hover {
+    color: white;
+    background-color: black; }
+
+.download p {
+  text-align: center;
+  color: #FF2D49;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'helvetica neue';
+  font-weight: 100; }
