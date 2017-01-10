@@ -14,7 +14,20 @@ $('.fa-bars').click(function() {
     
 }) 
 
-$('.home-li' && '.name').click(function() {
+$('.name').click(function() {
+    // $('.home-sect').animate({display:'none'}, 1000);
+    $('.home-sect').css('display','block');
+    $('.menu ul li').animate({height: '0px'}, 1000)
+    $('.contact-sect').css('display', 'none');
+    $('.about-sect').css('display', 'none');
+    $('.dev-sect').css('display', 'none');
+    $('.des-sect').css('display', 'none');
+    $('.art-sect').css('display', 'none');
+    $('.photo-sect').css('display', 'none');
+    $('.resume-sect').css('display', 'none');
+    
+}) 
+$('.home-li').click(function() {
     // $('.home-sect').animate({display:'none'}, 1000);
     $('.home-sect').css('display','block');
     $('.menu ul li').animate({height: '0px'}, 1000)
