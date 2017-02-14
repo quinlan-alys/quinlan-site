@@ -172,7 +172,7 @@ body {
 .description-about, .description-dev, .description-resume {
   width: 300px; }
 
-.description-art {
+.description-art, .description-des {
   width: 250px; }
 
 .social-media {
@@ -666,7 +666,7 @@ li:hover span {
   background: url(../../images/art/art16.jpg);
   background-size: cover; }
 
-.des-work1, .des-work2, .des-work3 {
+.des-work1, .des-work2, .des-work3, .des-work4 {
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -678,7 +678,7 @@ li:hover span {
   position: relative;
   display: -ms-flexbox;
   display: flex; }
-  .des-work1 p, .des-work2 p, .des-work3 p {
+  .des-work1 p, .des-work2 p, .des-work3 p, .des-work4 p {
     bottom: 120px;
     left: 20px;
     position: absolute;
@@ -709,10 +709,8 @@ li:hover span {
       justify-content: space-between;
   margin: 10% auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .des-examples p:nth-child(4) {
+      flex-wrap: wrap; }
+  .des-examples p:nth-child(5) {
     font-family: 'Comfortaa';
     font-weight: 100;
     color: lightgrey;
@@ -735,6 +733,11 @@ li:hover span {
   background: url(../../images/quinlansite.png); }
   .des-work3:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/quinlansite.png); }
+
+.des-work4 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/cakelogo.png); }
+  .des-work4:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/cakelogo.png); }
 
 .photo-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photohero.jpg);

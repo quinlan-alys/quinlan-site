@@ -1,6 +1,6 @@
 
 
-.des-work1, .des-work2, .des-work3 {
+.des-work1, .des-work2, .des-work3, .des-work4 {
 
     height:250px;
     width:250px;
@@ -42,9 +42,8 @@
     justify-content:space-between;
     margin:10% auto;
     flex-wrap: wrap;
-    justify-content:center;
 
-    p:nth-child(4) {
+    p:nth-child(5) {
         font-family:'Comfortaa';
         font-weight:100;
         color:lightgrey;
@@ -80,6 +79,16 @@
 
   &:hover {
          background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/quinlansite.png);
+    }
+    
+}
+
+.des-work4 {
+
+    background: linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url(../../images/cakelogo.png);
+
+  &:hover {
+         background: linear-gradient( to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100% ), url(../../images/cakelogo.png);
     }
     
 }
