@@ -432,6 +432,28 @@ li:hover span {
     font-family: 'Comfortaa';
     margin-bottom: 15px; }
 
+.dev-work8 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/clickdraw.png);
+  background-size: cover;
+  width: 33%;
+  margin: 12px auto;
+  text-align: center;
+  font-family: helvetica;
+  font-weight: 100;
+  color: white;
+  height: 100px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .dev-work8:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/clickdraw.png); }
+  .dev-work8 p:first-child {
+    font-family: 'Comfortaa';
+    margin-bottom: 15px; }
+
 .dev-examples {
   margin-top: 50px; }
   .dev-examples a {
