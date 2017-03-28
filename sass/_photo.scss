@@ -7,6 +7,9 @@
     flex-direction: column;
     justify-content: center;
     background-size:cover;
+    &:focus {
+        outline:none;
+    }
     @include desktop {
         height:100vh;
     }
@@ -67,10 +70,9 @@
 }
 .photo-text {
     font-family:'helvetica neue';
-    color:#FF2D49;
+    color:white;
     text-align:center;
     font-weight:100;
-   
      margin: 11% 16% 150px 9%;
   
 }

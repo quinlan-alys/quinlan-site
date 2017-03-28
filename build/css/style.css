@@ -169,11 +169,20 @@ body {
   border: 1px solid lightgrey;
   color: lightgrey; }
 
-.description-about, .description-dev, .description-resume {
-  width: 300px; }
+.description-contact {
+  width: 145px; }
 
-.description-art, .description-des {
-  width: 250px; }
+.description-photo {
+  width: 170px; }
+
+.description {
+  width: 120px; }
+
+.description-about, .description-resume {
+  width: 270px; }
+
+.description-art, .description-des, .description-dev {
+  width: 220px; }
 
 .social-media {
   display: -ms-flexbox;
@@ -232,7 +241,7 @@ li:hover span {
 .about-text {
   margin: 70px auto;
   font-family: 'helvetica neue';
-  color: #FF2D49;
+  color: white;
   width: 90%;
   font-weight: 100;
   line-height: 25px;
@@ -805,6 +814,8 @@ li:hover span {
   -ms-flex-pack: center;
       justify-content: center;
   background-size: cover; }
+  .photo-image:focus {
+    outline: none; }
   @media (min-width: 1000px) {
     .photo-image {
       height: 100vh; } }
@@ -859,7 +870,7 @@ li:hover span {
 
 .photo-text {
   font-family: 'helvetica neue';
-  color: #FF2D49;
+  color: white;
   text-align: center;
   font-weight: 100;
   margin: 11% 16% 150px 9%; }

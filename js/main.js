@@ -103,19 +103,40 @@ console.log('big screen?');
 //display design section and retract
 $('.design-li').click(function() {
 
-     $('.des-sect').css('display', 'block');
-    $('.des-sect').animate({height: '1700px'}, 1000)
-    // $('.des-sect').css('margin-top', '90px');
+    if ($(window).width() < 1000) {
+    console.log('small screen');
+    $('.des-sect').css('display', 'block');
+    $('.des-sect').animate({height: '2000px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
+}
+else {
+console.log('big screen?');
+     $('.des-sect').css('display', 'block');
+    $('.des-sect').animate({height: '1200px'}, 1000)
+    $('.menu ul li').animate({height: '0px'}, 1000)
+  
+}
+
 }) 
 
 //display photography section and retract
 $('.photo-li').click(function() {
 
-     $('.photo-sect').css('display', 'block');
-    $('.photo-sect').animate({height: '4500px'}, 1000)
-    // $('.photo-sect').css('margin-top', '90px');
+      if ($(window).width() < 1000) {
+    console.log('small screen');
+        $('.photo-sect').css('display', 'block');
+    $('.photo-sect').animate({height: '1500px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
+}
+else {
+console.log('big screen?');
+     $('.photo-sect').css('display', 'block');
+    $('.photo-sect').animate({height: '1200px'}, 1000)
+    $('.menu ul li').animate({height: '0px'}, 1000)
+  
+}
+
+
 }) 
 
 //display photography section and retract
