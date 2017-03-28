@@ -8,7 +8,7 @@
     justify-content: center;
     background-size:cover;
     &:focus {
-        outline:none;
+        outline-style:none;
     }
     @include desktop {
         height:100vh;

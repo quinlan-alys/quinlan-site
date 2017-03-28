@@ -170,7 +170,7 @@ body {
   color: lightgrey; }
 
 .description-contact {
-  width: 145px; }
+  width: 210px; }
 
 .description-photo {
   width: 170px; }
@@ -815,7 +815,7 @@ li:hover span {
       justify-content: center;
   background-size: cover; }
   .photo-image:focus {
-    outline: none; }
+    outline-style: none; }
   @media (min-width: 1000px) {
     .photo-image {
       height: 100vh; } }
