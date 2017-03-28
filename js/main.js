@@ -83,12 +83,22 @@ $('.dev-li').click(function() {
 
 //display art section and retract
 $('.art-li').click(function() {
-
+if ($(window).width() < 1000) {
+    console.log('small screen');
      $('.art-sect').css('display', 'block');
-    $('.art-sect').animate({height: '4500px'}, 1000)
-    // $('.art-sect').css('margin-top', '90px');
+    $('.art-sect').animate({height: '4700px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
-}) 
+   
+}
+else {
+console.log('big screen?');
+    $('.art-sect').css('display', 'block');
+    $('.art-sect').animate({height: '1800px'}, 1000)
+    $('.menu ul li').animate({height: '0px'}, 1000)
+  
+}
+    
+}); 
 
 //display design section and retract
 $('.design-li').click(function() {
@@ -138,6 +148,7 @@ $('.description-photo').click(function() {
 })
 
 $('.description-art').click(function() {
+    
      $('html, body').animate({scrollTop: '+=550px'}, 800);
 
 })
