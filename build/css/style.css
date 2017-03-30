@@ -253,7 +253,6 @@ li:hover span {
 .about-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/blurryface.png);
   background-size: cover;
-  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -272,7 +271,6 @@ li:hover span {
 .dev-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/development.jpg);
   background-size: cover;
-  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -471,7 +469,6 @@ li:hover span {
 .art-image {
   background: url(../../images/art/sonderfirstimage.jpg);
   background-size: cover;
-  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -729,7 +726,7 @@ li:hover span {
   background: url(../../images/art/art16.jpg);
   background-size: cover; }
 
-.des-work1, .des-work2, .des-work3, .des-work4 {
+.des-work1, .des-work2, .des-work3, .des-work4, .des-work5 {
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -741,17 +738,16 @@ li:hover span {
   position: relative;
   display: -ms-flexbox;
   display: flex; }
-  .des-work1 p, .des-work2 p, .des-work3 p, .des-work4 p {
+  .des-work1 p, .des-work2 p, .des-work3 p, .des-work4 p, .des-work5 p {
     bottom: 120px;
     left: 20px;
     position: absolute;
-    font-family: 'helvetica neue';
+    font-family: 'comfortaa';
     font-weight: 100; }
 
 .des-image {
   background: url(../../images/design.png);
   background-size: cover;
-  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;
@@ -802,9 +798,14 @@ li:hover span {
   .des-work4:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/cakelogo.png); }
 
+.des-work5 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/hersie.png);
+  background-size: cover; }
+  .des-work5:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../../images/hersie.png); }
+
 .photo-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../images/photohero.jpg);
-  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: -ms-flexbox;

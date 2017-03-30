@@ -106,13 +106,13 @@ $('.design-li').click(function() {
     if ($(window).width() < 1000) {
     console.log('small screen');
     $('.des-sect').css('display', 'block');
-    $('.des-sect').animate({height: '2000px'}, 1000)
+    $('.des-sect').animate({height: '2500px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
 }
 else {
 console.log('big screen?');
      $('.des-sect').css('display', 'block');
-    $('.des-sect').animate({height: '1200px'}, 1000)
+    $('.des-sect').animate({height: '1500px'}, 1000)
     $('.menu ul li').animate({height: '0px'}, 1000)
   
 }
